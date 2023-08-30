@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*   function findMinMax() {
+	let Arr = [50, 60, 20, 10, 40];
+	let minValue = Arr[0];
+	let maxValue = Arr[0];
+debugger;
+	for (let i = 0; i < Arr.length; i++) {
+       
+        if(Arr[i]>maxValue){
+            maxValue=Arr[i];
+        }
+        else if(Arr[i]<minValue){
+            minValue=Arr[i];
+        }
+    }debugger
+    console.log(`Maximum Value: ${maxValue}`);
+    console.log(`minmum value : ${minValue}`);
+}
+
+findMinMax(); */
+
+
+
+
+function findMinMax() {
+	let Arr = [50, 60, 20, 10, 40];
+	let minValue = Infinity;
+	let maxValue = -Infinity;
+
+	for (let item of Arr) {
+
+		// Find minimum value
+		if (item < minValue)
+			minValue = item;
+
+		// Find maximum value
+		if (item > maxValue)
+			maxValue = item;
+	}
+
+	console.log("Minimum element is:" + minValue);
+	console.log("Minimum element is:" + maxValue);
+}
+
+findMinMax();
+    </script>
+</body>
+</html>

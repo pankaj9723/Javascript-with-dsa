@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Define a variable in the global scope:
+const firstName = "Oluwatobi";
+const lastName = "Sofela"
+
+// Define nested functions:
+function profile() {
+  function sayName() {
+    function writeName() {
+        console.log(firstName);
+      return firstName;
+  
+    }
+    console.log(lastName);
+    return writeName();
+  }
+  return sayName();
+}
+
+let result = profile();
+// let result1 = sayName;
+// let result2 = writeName;
+console.log(result);
+// console.log(result1);
+// console.log(result2);
+
+    </script>
+</body>
+</html>

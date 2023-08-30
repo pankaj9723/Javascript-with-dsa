@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <title>Deep copy example using load ash</title>
+</head>
+<body>
+    <h1>EXAMPLE DEEP COPY WITH CDN LOADASH</h1>
+    <script>
+           let deep ={
+            name:'peter',
+            age: '26',
+            address:{
+                city:"noida",
+                state:"up"
+            },
+            getData:function(){
+            return "all data is here"
+            }
+        };
+
+        let user4 = _.cloneDeep(deep)
+        user4.address.city="gurgaon"
+        console.log("deep : ",deep);
+        console.log("user4",user4);
+    </script>
+</body>
+</html>

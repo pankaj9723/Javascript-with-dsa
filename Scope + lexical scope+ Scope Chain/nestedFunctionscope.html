@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("start");
+    //   EXAMPLE :-1
+   /*  function outer(){
+        return function inner(){
+            return 1+1;
+        }
+    }
+let result = outer;
+console.log(result());// it will return the inner function defination
+console.log(result()()); */ // it will return the 1+1=2 
+
+
+// EXAMPLE :-2
+
+/* function outer(){
+        return function inner(){
+            return function inside(){
+                return "hello"
+            }
+        }
+    }
+let result1= outer;
+console.log(result1()()()); */
+
+
+// EXAMPLE :-3
+
+/* function myage(y){
+    document.write("My age is "+y+ "yrs <br/>");
+}
+
+function myname(x,y){
+    document.write("MY name is "+x+"<br>");
+    myage(y);
+}
+
+myname("john",26);
+myname("Max",20);
+myname("Marie",18);
+ */
+    </script>
+  </body>
+</html>

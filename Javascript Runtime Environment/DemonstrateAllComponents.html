@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function a(){
+            console.log("first");
+        }
+
+        function b(){
+            console.log("second"); // 25ms delay
+        }
+
+        function C(){
+            console.log("third");
+        }
+
+        function d(){
+            console.log("fourth");
+        }
+        a();
+
+        setTimeout(b,0);            // CALLBACK - QUEUE 
+        Promise.resolve().then(C);  //MACRO-TASK
+        d();
+        
+    /*  function logA() {
+        console.log("A");
+      }
+      function logB() {
+        console.log("B");
+      }
+      function logC() {
+        console.log("C");
+      }
+      function logD() {
+        console.log("D");
+      }
+
+      // Click the "RUN" button to learn how this works!
+      logA();
+      setTimeout(logB, 0);
+      Promise.resolve().then(logC);
+      logD(); */
+
+    </script>
+</body>
+</html>

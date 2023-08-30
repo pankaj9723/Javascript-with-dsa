@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* function additon(x,y){
+         sum = x+y;
+    }
+    additon(5,6);
+    console.log(sum); //SUM IS NOT DEFINED */
+
+      /*  let sum;
+    function additon(x,y){
+         sum = x+y;
+    }
+    additon(5,6);
+    console.log(sum); //SUM IS NOT DEFINED */
+
+      /*   let sum=10;
+    function additon(x,y){
+         let c =100;
+         sum=111;
+         console.log(c);
+    }
+    sum =222;
+    additon(5,6);
+    console.log(sum); //SUM IS NOT DEFINED
+    console.log(c);
+ */
+
+      /*  var a=3;
+
+ if(a>2){
+    alert("hello");
+ }
+     */
+
+      /* function add(){
+    var x =10;
+    let y =20;
+    let z=30;
+} 
+console.log(x);
+console.log(y);
+console.log(z); */
+
+      /* for (var i = 0; i < 5; i++) {
+    // const element = array[i];
+    // console.log(i);
+    
+}
+console.log(i); //output will be 5
+ */
+
+      // global scope ---
+      // local or function scope --- let var and const
+      // block scope -- let and var
+
+      // return function
+
+      /* function addition(){
+    let a =10;
+    return a;
+}
+
+console.log(addition()); */
+
+      /* let x;
+let c;
+
+function multiply(a,b){
+    document.write(a*b)
+    
+
+}
+
+
+multiply(15,2);
+ c = multiply(6,2);
+ x = c+500;
+console.log(x);
+document.write(x) */
+
+      /* let x;
+let c;
+
+function multiply(a,b){
+    return a*b
+    
+
+}
+
+
+let two = multiply(15,2);
+ c = multiply(6,2);
+ x = c+500;
+console.log(x);
+document.write(x);
+document.write("<br>");
+document.write(two); */
+
+      /* function foo(){
+    if(10){
+        return 100;
+    }
+    if(true){
+        return 200
+    }
+}
+
+console.log(foo()); */
+
+      /* function foo(){
+    function aaa(){
+        return 200
+    }
+    if(10){
+        return aaa; // this return the function defination 
+    }
+    if(true){
+        return 200
+    }
+}
+
+console.log(foo()); */
+
+      /* function foo(){
+    function aaa(){
+        return 200
+    }
+    if(10){
+        return aaa(); // this return the function value 
+    }
+    if(true){
+        return 200
+    }
+}
+
+console.log(foo()); */
+
+      // this will return the function definition.
+
+      /* function aaa()
+{
+    return 100;
+}
+
+
+console.log(aaa); */
+
+      // This will return the value inside the funciton
+      /* function aaa()
+{
+    return 100;
+}
+
+
+console.log(aaa()); */
+
+      // it will return the function defination
+
+      /* const aaa = function(){
+    return 100;
+}
+console.log(aaa); */
+
+      //it will return the value inside the funciton
+      /* function aaa()
+{
+    return 100;
+}
+
+
+console.log(aaa()); */
+
+      /* const aaa = function(){
+    let a =10;
+    let b =20;
+    return a,b;
+}
+console.log(aaa);
+console.log(aaa()); */
+
+      /* function exclos(){
+    let a =47;
+
+    function addition(){
+        let b =33;
+       console.log(a);
+       console.log(b);
+    }
+addition()
+
+}
+let store = exclos();
+console.log(store()); */
+
+      // nested function example
+
+      // outer function
+      /* function greet(name) {
+
+// inner function
+function displayName() {
+    console.log('Hi' + ' ' + name);
+}
+
+// calling inner function
+displayName();
+}
+
+// calling outer function
+greet('John'); // Hi John
+ */
+
+      // function with its lexical scope bundle together form a clousure
+      /*  function cls(){
+    let a =15;
+    function bepl(){
+        let b =14;
+        console.log(a);
+    }
+    bepl()
+}
+let c =cls();
+console.log(c); */
+
+
+/*  const outer =() =>{
+            let a= 10;
+
+           const inner =()=>{
+            let b=20;
+            let c =a+b;
+            console.log(c);
+           } 
+           return inner;
+        }
+
+        let output = outer();
+        // console.log(output);
+   output(); */
+
+
+
+/*  function a(){
+    let as =10;
+        function b(){
+            let bc =15+as;
+            console.log(as);
+        }
+      b();
+ }
+let output = a();
+output(); */
+
+
+
+
+    </script>
+  </body>
+</html>
