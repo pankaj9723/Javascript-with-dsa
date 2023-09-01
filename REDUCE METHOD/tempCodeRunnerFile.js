@@ -1,5 +1,4 @@
-let value = initialValue;
-for (const cur of marks) {
-  val = update(value, cur);
+const marks = [1,3,5,6,7,8];
+function myCallBack(sum,item){
+    return sum+item
 }
-console.log(object)

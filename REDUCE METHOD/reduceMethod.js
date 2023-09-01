@@ -10,7 +10,7 @@ console.log(result); */
 // MAP ==> item+5000=> return new array// ONE PARAMETER
 // FILTER ==> item > return new array // ONE PARAMETER
 
-// REDUCE ==> RETURN ONLY SINGLE VALUE // TWO PARAMETER
+// REDUCE ==> RETURN ONLY SINGLE VALUE // TWO PARAMETER (accumulater, currentvalue) accumalator== previous value currentvalue 
 
 /* const marks = [5,10,15,20]
 

@@ -34,9 +34,15 @@ const shop = [
 
 ]
 
-function totalPrice(acc,item){
+/* function totalPrice(acc,item){
 return acc+item.price;
 }
 
-const result = shop.reduce(totalPrice,0)
+const result = shop.reduce(totalPrice)
+console.log(result); */
+
+const result = shop.reduce((a,b)=>{
+    let v =+ a+b.price;
+    return v
+},0)
 console.log(result);
